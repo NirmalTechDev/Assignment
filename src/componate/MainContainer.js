@@ -60,7 +60,7 @@ const MainContainer = () => {
     );
 
     if (loading) {
-        return <ActivityIndicator size="large" color="#fff" />;
+        return <ActivityIndicator size="large" color="#808080" />;
     }
 
     return (
@@ -73,7 +73,7 @@ const MainContainer = () => {
             onEndReachedThreshold={0.5}
             ListFooterComponent={
                 loadingMore ? (
-                    <ActivityIndicator size="small" color="#fff" />
+                    <ActivityIndicator size="small" color="#808080" />
                 ) : !hasMorePosts ? (
                     <Text style={styles.endMessage}>No more posts to load</Text>
                 ) : null
